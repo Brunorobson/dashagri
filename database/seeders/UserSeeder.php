@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
                 'id' => 1,
                 'name' => 'Suporte',
                 'cpf' => '00000000000',
-                'email' => 'suporte@dashagro.com',
+                'email' => 'suporte@dashagri.com',
                 'email_verified_at' => now(),
                 'password' => bcrypt('12345678'), 
                 'remember_token' => Str::random(10)

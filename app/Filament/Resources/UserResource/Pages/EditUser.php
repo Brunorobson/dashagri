@@ -11,13 +11,6 @@ class EditUser extends EditRecord
 {
     protected static string $resource = UserResource::class;
 
-    protected function mutateFormDataBeforeSave(array $data): array
-{
-    $data['password'] = Hash::make($data['password']);
- 
-    return $data;
-}
-
     protected function getHeaderActions(): array
     {
         return [

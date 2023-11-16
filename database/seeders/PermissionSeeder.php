@@ -30,14 +30,13 @@ class PermissionSeeder extends Seeder
             ['id' => 10, 'name' => 'Escrever Detalhes', 'guard_name' => 'write_details'],
         ]);
 
-        //role_permission
+        //permission_role
         //Administrador = 2
-        DB::table('role_permission')->insert([
+        DB::table('permission_role')->insert([
+            ['permission_id' => 1, 'role_id' => 2],
             ['permission_id' => 1, 'role_id' => 2],
             ['permission_id' => 3, 'role_id' => 2], 
-            ['permission_id' => 4, 'role_id' => 2],
             ['permission_id' => 5, 'role_id' => 2],
-            ['permission_id' => 6, 'role_id' => 2],
             ['permission_id' => 7, 'role_id' => 2],
             ['permission_id' => 8, 'role_id' => 2],
             ['permission_id' => 9, 'role_id' => 2],
@@ -45,14 +44,14 @@ class PermissionSeeder extends Seeder
         ]);
 
         //Analista = 3
-        DB::table('role_permission')->insert([
+        DB::table('permission_role')->insert([
             ['permission_id' => 7, 'role_id' => 3],
             ['permission_id' => 9, 'role_id' => 3],
             ['permission_id' => 10, 'role_id' => 3],
         ]);
 
         //Fazendeiro = 4
-        DB::table('role_permission')->insert([//Ler Submissões
+        DB::table('permission_role')->insert([//Ler Submissões
             ['permission_id' => 1, 'role_id' => 4],
             ['permission_id' => 2, 'role_id' => 4],
             ['permission_id' => 7, 'role_id' => 4],
@@ -60,7 +59,7 @@ class PermissionSeeder extends Seeder
         ]);
 
         //Convidado = 5
-        DB::table('role_permission')->insert([
+        DB::table('permission_role')->insert([
             ['permission_id' => 7, 'role_id' => 5], 
             ['permission_id' => 9, 'role_id' => 5],
         ]);
